@@ -1,0 +1,247 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	background-color: #000;
+	text-align: center;
+	position: relative;
+	overflow-x: hidden;
+	font-size: 1em;
+	text-shadow: 1px 1px 1px #000;
+	box-shadow: 1px 1px 1px #000;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+}
+.invisible{
+	display: none;
+}
+.white{
+	color: #fff;
+}
+#menu_btn.visible{
+	background: rgba(120,124,110,0.6);
+}
+section{
+	margin-top: 50px;
+}
+h5{
+	text-indent: -2000px;
+}
+/*************** HEADER ************/
+header{
+	width: 100%;
+	height: 100%;
+	background: url("../images/background.jpg") #000 center no-repeat;
+	font-size: 1.2em;
+	font-family: 'ostrich-rounded-webfont';
+	color: #fff;
+}
+header h5{
+	position: absolute;
+	top: -200px;
+}
+header .hgroup{
+	padding-top: 80px;
+}
+header .hgroup span{
+	font-weight: bold;
+}
+h1{
+	padding-top: 25px;
+	font-size: 4.5em;
+}
+header h2{
+	width: 500px;
+	margin: 0 auto;
+	font-size: 2.5em;
+	padding: 15px;
+	border: 2px ridge rgba(255,255,255,0.5);
+}
+header h3{
+	padding: 15px 0;
+}
+header nav{
+	position: fixed;
+	position: relative;
+	width: 100%;
+	top: 0;
+}
+.fleche{
+	margin-top: 50px;
+}
+#menu{
+	position: fixed;
+	width: 100%;
+	height: 72px;
+	right: 0;
+	background: rgba(158,163,145,0.8);
+	z-index: 10;
+	
+}
+header nav li{
+	display: inline-block;
+	width: auto;
+	padding: 0 20px;
+	text-align: center;
+	height: 72px;
+	line-height: 72px;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+}
+header nav ul li:hover{
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+header nav ul li:last-child:hover{
+	border-left: 1px solid #fff;
+	border-right: 1px solid transparent;
+}
+header nav ul li:first-child:hover{
+	border-right: 1px solid #fff;
+	border-left: 1px solid transparent;
+}
+header nav ul li a{
+	color: #fff;
+	font-family: 'neou-Thin';
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 2em;
+	margin: 0 auto;
+}
+#menu_btn{
+	position: fixed;
+	min-width: 81px;
+	min-height: 72px;
+	top: 0;
+	right: 0;
+	width: 5%;
+	height: 72px;
+	border-left: 1px solid #fff;
+	background: rgba(187,113,113,0.7);
+	z-index: 10;
+
+}
+#menu_btn img{
+	padding-top: 20px;
+}
+.bulle1{
+	position: fixed;
+	display: block;
+	width: 100px;
+	height: 100px;
+	background: url("../images/bulle1.png");
+	bottom: 1%;
+	right: 47.5%;
+	z-index: 1;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+	border-radius: 600%;
+}
+.bulle1 a{
+	padding: 40px 30px;
+	padding-right: 70px;
+	vertical-align: -43px;
+	margin-left: -180px;
+	color: #fff;
+	font-family: 'ostrich-rounded-webfont';
+	font-size: 1.5em;
+}
+/************SYNOPSIS************/
+.synopsis{
+	position: relative;
+	height: 120%;
+	background: url("../images/lost-in-translation.jpg")  no-repeat center;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.synopsis h2{
+	color: #fff;
+	font-size: 2em;
+	font-family: 'ostrich-rounded-webfont';
+	margin-top: 70px;
+	padding: 15px 0;
+}
+.synopsis p{
+	width: 500px;
+	font-size: 1.5em;
+	margin: 0 auto;
+	margin-top: 100px;
+	color: #fff;
+	font-family: 'ostrich-rounded-webfont';
+}
+/************PERSO************/
+
+.perso{
+	position: relative;
+}
+.bulle2{
+	position: absolute;
+	display: block;
+	width: 204px;
+	height: 204px;
+	background: url("../images/bulle2.png") no-repeat center;
+	top: 100px;
+	left: 1%;
+}
+.bulle3{
+	position: absolute;
+	display: block;
+	width: 204px;
+	height: 204px;
+	background: url("../images/bulle3.png") no-repeat center;
+	top:100px;
+	right: 1%;
+}
+.bill_bio{
+	position: absolute;
+	width: 500px;
+	right: 280px;
+	font-family: 'ostrich-rounded-webfont';
+	font-size: 1.8em;
+	top: 200px;
+}
+.scarlet_bio{
+	position: absolute;
+	width: 500px;
+	left: 280px;
+	font-family: 'ostrich-rounded-webfont';
+	font-size: 1.8em;
+	top: 200px;
+}
+.perso div a:hover .bulle2+.bulle3{
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+}
+.perso div a{
+	padding: 100px 100px;
+	vertical-align: -100px;
+	margin-left: -18px;
+	color: #fff;
+	font-family: 'ostrich-rounded-webfont';
+	font-size: 0.8em;
+}
+.perso h2{
+	color: #fff;
+	font-size: 2em;
+	font-family: 'ostrich-rounded-webfont';
+	margin-top: 70px;
+	padding: 15px 0;
+}
+/************ VIDEO ********/
+#video_background{
+	position: relative; 
+	top: 768px; 
+	left: 0px; 
+	width: 100%;
+	height: auto; 
+}
+#trailer{
+	position: fixed;
+	top: 800px;
+}
+/*********** Avis ********/
+

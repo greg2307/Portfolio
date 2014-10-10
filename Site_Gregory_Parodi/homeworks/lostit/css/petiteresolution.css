@@ -1,0 +1,57 @@
+/* ------- Général ------- */
+body{
+	font-size: 1em;
+}
+/* ------- Header ------- */
+
+header nav{
+	position: fixed;
+	position: relative;
+	width: 100%;
+	height: 72px;
+}
+header nav li{
+	display: block;
+	margin: 40px 0;
+}
+header nav ul li{
+	color: #000;
+	background: #b1e9f8;
+	padding: 10px 20px;
+	border-radius: 10px;
+	display: none;
+}
+#menu_btn{
+	background: rgba(158,163,145,0.8);
+}
+/* ------- Articles ------- */
+#articles li{
+	display: block;
+	width: 100%;
+}
+/* ------- Videos ------- */
+#videos{
+	width: 100%;
+}
+#videos li{
+	height: inherit;
+	padding: 0;
+}
+#videos img{
+	float: inherit;
+	width: 100%;
+	padding: 0;
+}
+#videos hgroup, #videos p{
+	padding: 20px;
+}
+#videos .play{
+	background: url('../images/play2.png') no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+}
+
+

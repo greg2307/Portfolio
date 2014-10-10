@@ -1,0 +1,218 @@
+
+/* GREGORY PARODI HETIC 1ère année */
+
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+}
+body{
+	font-family: 'Verdana''Arial';
+}
+a{
+	text-transform: uppercase;
+}
+h1{
+	display: none;
+}
+/************ HEADER ***********/
+#header{
+	height: 140px;
+	padding: 10px 0 0 0;
+	background: #ffffff;
+}
+#logo img{
+	padding: 15px 0 20px 8px;
+}
+#pro{
+	position: absolute;
+	right: 0;
+	background: url("../images/picto_cadenas.png") no-repeat 160px 4px #42b49a ;
+	padding: 5px 35px 7px 14px;
+	font-size: 11px;
+	color: #fff;
+	border-radius: 5px;
+}
+#header form{
+	position: absolute;
+	right: 0;
+	top: 103px;
+}
+#nav{
+	position: absolute;
+	bottom: -1;
+}
+#nav li{
+	float: left;
+	display: block;
+	height: 15px;
+	border-right: 1px #000 solid;
+	padding-bottom: 5px;
+}
+#nav li a{
+	padding: 9px 11px 9px 15px;
+	color: #000;
+	line-height: 28px;
+	font-size: 12px;
+	background: #f49e00;
+}
+/************ SLIDE ***********/
+#slide{
+	background: #409ba0;
+	padding-bottom: 42px;
+}
+#slide_bg{
+	margin-top: 20px;
+	background: #fff;
+	z-index: 1;
+}
+.arrow{
+	display: block;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+}
+.arrow:nth-child(2n+1){
+	left: 10px;
+	background: url("../images/slide_arrow_left.png") center no-repeat #e3e0db;
+}
+.arrow:nth-child(2n){
+	right: 10px;
+	background: url("../images/slide_arrow_right.png") center no-repeat #e3e0db;
+}
+.slide_legend{
+	width: 180px;
+	position: absolute;
+	top: 90px;
+	left: 90px;
+}
+.slide_legend h3{
+	color: #0099a8;
+	text-transform: uppercase;
+	font-size: 12px;
+}
+.slide_legend h2{
+	font-family: 'Myriad Pro';
+	color: #000;
+	font-weight: bold;
+	font-size: 26px;
+	margin-top: 9px;
+}
+.slide_legend p{
+	color: #333;
+	font-family: 'Arial';
+	font-size: 14px;
+	margin: 13px 0;
+}
+.slide_legend a{
+	background: #fa9a3a;
+	color: #fff;
+	font-family: 'Verdana';
+	font-size: 9px;
+	padding: 4px 15px 4px 7px;
+	border-radius: 5px;
+}
+.btn{
+	position: absolute;
+	bottom: -25px;
+	left: 462px;
+}
+.btn a{
+	display: block;
+	float: left;
+	width: 12px;
+	height: 12px;
+	background: #fff;
+	border-radius: 6px;
+}
+.btn a:nth-child(2n){
+	margin: 0 18px;
+}
+.btn a.active{
+	background: #a09891;
+	border-bottom: rgba(255,255,255,0.1)
+}
+/************ CONTENT ***********/
+#content{
+	padding: 25px 0 30px 0;
+	clear: both;
+	background: #f2f2ed;
+}
+#categorie{
+	width: 960px;
+	height: 181px;
+}
+.categorie{
+	padding: 15px;
+	float: left;
+	width: 270px;
+	height: 180px;
+	background: #fff;
+}
+.article{
+	float: right;
+	width: 130px;
+}
+.article h2{
+	font-family: 'memphis';
+	font-size: 22px;
+	color: #000;
+	margin-bottom: 10px;
+}
+.article p{
+	color: #333;
+	font-family: 'Georgia';
+	font-size: 13px;
+	margin-bottom: 12px;
+
+}
+.article a{
+	background: #fa9a3a;
+	color: #fff;
+	font-family: 'Verdana';
+	font-size: 9px;
+	padding: 4px 15px 4px 7px;
+	border-radius: 5px;
+}
+.categorie:nth-child(2n){
+	margin: 0 30px;
+}
+/************ FOOTER ***********/
+#footer{
+	background: #888881;
+	padding: 30px 0;
+	margin-top: 40px;
+}
+.footer{
+	height: 125px;
+	width: 960px;
+}
+.nav_footer{
+	background: #888881;
+	float: left;
+	padding-left: 30px;
+	width: 160px;
+	height: 120px;
+}
+.nav_footer h4{
+	color: #e6e6e0;
+	font-family: 'Verdana';
+	font-weight: bold;
+	font-size: 13px;
+	text-transform: uppercase;
+}
+.nav_footer li{
+	margin: 2px 0;
+}
+.nav_footer li a{
+	color: #e6e6e0;
+	font-family: 'Georgia';
+	font-size: 13px;
+	text-transform: none;
+}
+#social div{
+	width: 80px;
+	height: 82px;
+	margin: 20px auto 0 auto;
+}

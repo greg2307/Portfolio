@@ -1,0 +1,181 @@
+html{
+	min-width: 100%;
+	min-height: 100%;
+}
+body{
+	min-width: 100%;
+	min-height: 100%;
+	color: rgba(220,162,94,0.9);
+	text-shadow: #333 0.1em 0.1em 0.2em;
+	background: url("../images/background.jpg") center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+.wrapper{
+	width: 640px;
+	margin: 0 auto;
+}
+strong{
+	color: #b05050;
+}
+a{
+	display: block;
+	border-radius: 50%;
+	text-shadow:  0 0 0;
+	font-size: 30px;
+}
+/******** container ******/
+#container{
+	position: relative;
+	top: 160px;
+	height: 480px;
+	background: url("../images/motif.png") rgba(161,101,101,0.9);
+	border-radius: 15px;
+	border: 1px solid #fff;
+	-webkit-animation: noiseAnim 0.25s infinite linear alternate;
+    -moz-animation: noiseAnim 0.25s infinite linear alternate;
+    -o-animation: noiseAnim 0.25s infinite linear alternate;
+    animation: noiseAnim 0.25s infinite linear alternate;
+}
+h1, h2{
+	position: absolute;
+	font-size: 50px;
+	right: 20px;
+}
+.top{
+	height: 240px;
+	border-bottom: 2px dotted rgba(255,255,255,0.2);
+}
+.photo{
+	position: absolute;
+	top: 30px;
+	left: 10px;
+	-webkit-transition: all 0.75s ease;
+    -moz-transition: all 0.75s ease;
+    -ms-transition: all 0.75s ease;
+    -o-transition: all 0.75s ease;
+    transition: all 0.75s ease;
+}
+.photo:hover{
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+	
+}
+h1{
+	top: 56px;
+}
+h2{
+	top: 110px;
+}
+h3{
+	font-size: 40px;
+}
+.down{
+	margin-top: 40px;
+}
+.down h3{
+	display: block;
+	margin: 0 auto;
+}
+.left{
+	float: left;
+	width: 50%;
+}
+.left h3{
+	width: 70%;
+}
+.social{
+	width: 95%;
+	margin: 20px 0 0 15px;
+}
+.social li a{
+	float: left;
+	width: 70px;
+	height: 70px;
+	margin: 0 2px;
+}
+.facebook{
+	background: url("../images/fb_hover.png") rgba(0,0,0,0) center no-repeat;
+}
+.facebook:hover{
+	background: url("../images/fb.png") rgba(220,162,94,1) center no-repeat;
+}
+.google{
+	background: url("../images/google_hover.png") rgba(0,0,0,0) center no-repeat;
+}
+.google:hover{
+	background: url("../images/google.png") rgba(220,162,94,1) center no-repeat;
+}
+.linkedin{
+	background: url("../images/in_hover.png") rgba(0,0,0,0) center no-repeat;
+}
+.linkedin:hover{
+	background: url("../images/in.png") rgba(220,162,94,1) center no-repeat;
+}
+.twitter{
+	background: url("../images/twit_hover.png") rgba(0,0,0,0) center no-repeat;
+}
+.twitter:hover{
+	background: url("../images/twit.png") rgba(220,162,94,1) center no-repeat;
+}
+.right{
+	float: right;
+	width: 48%;
+	border-left: 2px solid #fff;
+}
+.right h3{
+	width: 50%;
+}
+.right div{
+	width: 65%;
+	margin: 20px auto;
+}
+.right a{
+	width: 70px;
+	height: 70px;
+	float: left;
+	margin: 0 10px;
+	text-align: center;
+	line-height: 70px;
+	color: rgba(0,0,0,0.2);
+}
+.right a:hover{
+	background: #b05050;
+	color: #ffffff;
+}
+/********animation ********/
+@-webkit-keyframes noiseAnim{
+  0%   { background-position: 10px 200px; }
+  20%  { background-position: -50px 0; }
+  40%  { background-position: 100px -10px; }
+  60%  { background-position: 0 -150px; }
+  80%  { background-position: -100px -30px; }
+  100% { background-position: 160px -60px; }
+}
+@-moz-keyframes noiseAnim {
+  0%   { background-position: 10px 200px; }
+  20%  { background-position: -50px 0; }
+  40%  { background-position: 100px -10px; }
+  60%  { background-position: 0 -150px; }
+  80%  { background-position: -100px -30px; }
+  100% { background-position: 160px -60px; }
+}
+@-o-keyframes noiseAnim {
+  0%   { background-position: 10px 200px; }
+  20%  { background-position: -50px 0; }
+  40%  { background-position: 100px -10px; }
+  60%  { background-position: 0 -150px; }
+  80%  { background-position: -100px -30px; }
+  100% { background-position: 160px -60px; }
+}
+@keyframes noiseAnim {
+  0%   { background-position: 10px 200px; }
+  20%  { background-position: -50px 0; }
+  40%  { background-position: 100px -10px; }
+  60%  { background-position: 0 -150px; }
+  80%  { background-position: -100px -30px; }
+  100% { background-position: 160px -60px; }
+}

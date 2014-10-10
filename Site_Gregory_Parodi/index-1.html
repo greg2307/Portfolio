@@ -1,0 +1,464 @@
+<head>
+	<title>Template SILEX V2</title>
+	<meta charset="UTF-8">
+	<meta name="generator" content="Silex v2.0"> <!-- leave this for stats -->
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/pageable.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/front-end.js"></script>
+	<!-- Normalize -->
+	<link href="http://static.silex.me/2.2/normalize.css" rel="stylesheet">
+	<!-- Silex style -->
+	<link href="http://static.silex.me/2.2/front-end.css" rel="stylesheet">
+
+	<style type="text/css" class="silex-style">
+/*
+	Here are the CSS styles of your website.
+
+	Bellow are some examples, like the styles which you can apply to your text in the text editor.
+
+	See this page for help on CSS
+	https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started  
+
+	In the advanced "Apollo" mode, you will be able to add CSS classes to Silex elements,
+	and then apply a CSS style to it here.
+*/
+
+/* define a style for Title, Headings and Normal texts */
+.title,
+.heading1,
+.heading2,
+.heading3,
+.normal {
+  font-family:Times;
+}
+
+/* title style */
+.title {
+  font-size: 45px;
+}
+
+.aHeader a{
+    text-decoration:none;
+    color:#b8c6ac;
+}
+
+.aHeader a:hover{
+    color:white;
+}
+
+.banner a{
+    color: #57614e;
+} 
+
+.mail a{
+    color:white;
+    text-decoration:none;
+    width:212px;
+    height:40px;
+    padding-top:3px;
+    padding-left: 15px;
+	animation-name: mail;
+	-webkit-animation-name: mail;	
+	animation-duration: 2.5s;	
+	-webkit-animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	-webkit-animation-iteration-count: infinite;
+}
+@keyframes mail {
+	0% {
+		transform: rotate(-3deg);	
+	}
+	50% {
+		transform: rotate(3deg);
+	}
+	100% {
+		transform: rotate(-3deg);	
+	}						
+}
+
+@-webkit-keyframes mail {
+	0% {
+		-webkit-transform: rotate(-3deg);	
+	}
+	50% {
+		-webkit-transform: rotate(3deg);
+	}
+	100% {
+		-webkit-transform: rotate(-3deg);	
+	}				
+}
+.read a{
+    color:white;
+    text-decoration:none;
+}
+
+.read a:hover{
+    color:black;
+}
+    
+.slides {
+    padding: 0;
+    width: 960px;
+    height: 400px;
+    display: block;
+    margin: 0 auto;
+    position: relative;
+}
+
+.slides * {
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+}
+
+.slides input { 
+    display: none; 
+}
+
+.slide-container { 
+    display: block; 
+}
+
+.slide {
+    top: 0;
+    opacity: 0;
+    width: 960px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    transform: scale(0);
+    transition: all .7s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+.nav label {
+    width: 200px;
+    height: 100%;
+    display: none;
+    position: absolute;
+    opacity: 0;
+    z-index: 9;
+    cursor: pointer;
+    transition: opacity .2s;
+    color: #FFF;
+    font-size: 156pt;
+    text-align: center;
+    line-height: 380px;
+    font-family: "Varela Round", sans-serif;
+    background-color: rgba(255, 255, 255, .3);
+    text-shadow: 0px 0px 15px rgb(119, 119, 119);
+}
+
+.slide:hover + .nav label { 
+    opacity: 0.5; 
+}
+
+.nav label:hover { 
+    opacity: 1; 
+}
+
+.nav .next { 
+    right: 0; 
+}
+
+input:checked + .slide-container  .slide {
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .nav label { display: block; }
+
+.nav-dots {
+	width: 100%;
+	bottom: 9px;
+	height: 11px;
+	display: block;
+	position: absolute;
+	text-align: center;
+}
+
+.nav-dots .nav-dot {
+	top: -5px;
+	width: 11px;
+	height: 11px;
+	margin: 0 4px;
+	position: relative;
+	border-radius: 100%;
+	display: inline-block;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.nav-dots .nav-dot:hover {
+	cursor: pointer;
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+input#img-1:checked ~ .nav-dots label#img-dot-1,
+input#img-2:checked ~ .nav-dots label#img-dot-2,
+input#img-3:checked ~ .nav-dots label#img-dot-3,
+input#img-4:checked ~ .nav-dots label#img-dot-4,
+input#img-5:checked ~ .nav-dots label#img-dot-5,
+input#img-6:checked ~ .nav-dots label#img-dot-6 {
+	background: rgba(0, 0, 0, 0.8);
+}
+
+.slidimg {
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+       -o-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+ 
+.slidimg:hover {
+  -webkit-filter: grayscale(100%);
+}
+
+.social:hover {
+    -webkit-transform: scale(1.1,1.1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.1,1.1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 250ms;
+    position: relative;
+    z-index: 99;
+}
+    
+</style>
+  <script type="text/javascript" class="silex-script"></script>
+<style id="current-page-style">.page-page-1{display:inherit; }</style></head>
+<body style="cursor: auto; background-color: rgb(229, 229, 229);" data-silex-type="container" class="silex-runtime">
+	<a id="page-page-1" data-silex-type="page" class="page-element">Page 1</a>
+	<div class="background editable-style container-element ui-dropzone-active" data-silex-type="container" style="top: 4.33331298828125px; left: 321px; width: 1440px; height: 1469px; position: absolute; background-color: transparent;">
+	<div data-silex-type="container" class="editable-style container-element header" style="position: absolute; height: 140px; width: 1439px; top: 0px; left: 0px; background-color: rgb(87, 97, 78);"><div data-silex-type="image" class="editable-style image-element page-link-active" style="position: absolute; height: 83px; width: 377px; top: 30px; left: 238px;" data-silex-href="#!page-page-1"><img src="logo.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25px;
+width: 50px;
+top: 70px;
+left: 666px;
+background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">HOME</a></div></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25.99999713897705px; width: 56.00001525878906px; top: 70px; left: 730px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">ABOUT</a></div></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25.99999713897705px; width: 96px; top: 70px; left: 801px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">PRACTICES</a></div></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25px; width: 121px; top: 70px; left: 907px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">OUR LAWYERS</a></div></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25.99999713897705px; width: 82px; top: 70px; left: 1108.999984741211px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">CONTACT</a></div></div><div data-silex-type="html" class="editable-style html-element aHeader" style="position: absolute; height: 25.99999713897705px; width: 49.00001525878906px; top: 70.00000286102295px; left: 1044px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">NEWS</a></div></div></div><div data-silex-type="container" class="editable-style container-element page-page-1 paged-element" style="position: absolute; height: 220px; width: 1438px; top: 544px; left: 0px; border-width: 1px 0px 0px; border-style: solid; border-color: rgb(255, 255, 255); background-color: rgb(229, 229, 229);"><div data-silex-type="text" class="editable-style text-element content" style="position: absolute; height: 28px;
+width: 433px;
+top: 11px;
+left: 242px;
+color: #57614e;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font size="5"><b>The Manes Winchester Promise</b></font></div><div><br></div></div></div><div data-silex-type="text" class="editable-style text-element content" style="position: absolute; height: 99px; width: 684px; top: 93.20832824707031px; left: 239.98265743255615px; color: gray; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div>This website template has been designed by <a href="http://www.freshdesignweb.com/"><font color="#444444">Free Website Templates</font></a> for you, for free. You can replace all this text with your own text. You can remove any link to our website from this website template, you're free to use this website template without linking back to us. If you're having problems editing this website template, then don't hesitate to ask for help on the <a href="http://www.freshdesignweb.com/category/tutorials"><font color="#444444">Forums</font></a>.</div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 220px; width: 254px; top: 0px; left: 932px; border-style: dotted; border-width: 0px 0px 0px 1px; border-color: rgb(255, 255, 255); background-color: transparent;"><div data-silex-type="text" class="editable-style text-element content" style="position: absolute; height: 28px;
+width: 152px;
+top: 11px;
+color: #57614e;
+left: 3.4901123046875px;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="5"><b>Testimonials</b></font></div></div><div data-silex-type="text" class="editable-style text-element content" style="position: absolute; height: 63px; width: 244px; top: 67px; color: gray; left: 11px; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div>“Aenean ullamcorper purus vitae nisl tristique sollicitudin. Quisque vestibulum, erat ornare.”</div><div><br></div></div></div><div data-silex-type="text" class="editable-style text-element content" style="position: absolute; height: 28px;
+width: 204px;
+color: gray;
+top: 150.965087890625px;
+left: 43.4820556640625px;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div style="text-align: right;">-John Doe and Jane Doe-</div></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 51px; width: 1440px; top: 876px; left: -1.666669249534607px; background-color: rgb(87, 97, 78);"><div data-silex-type="html" class="editable-style html-element social" style="position: absolute; height: 22px; width: 44px; top: 15px; left: 387px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#"><img src="pin.png"></a></div></div><div data-silex-type="html" class="editable-style html-element social" style="position: absolute; height: 22px; width: 44px; top: 15px; left: 335px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#"><img src="goo.png"></a></div></div><div data-silex-type="html" class="editable-style html-element social" style="position: absolute; height: 22px; width: 44px; top: 15px; left: 285px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#"><img src="twi.png"></a></div></div><div data-silex-type="html" class="editable-style html-element social" style="position: absolute; height: 22px; width: 52px; top: 15px; left: 235px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#"><img src="fb.png"></a></div></div></div></div><div data-silex-type="container" class="editable-style container-element page-page-1 paged-element" style="position: absolute; height: 445px; width: 1438px; top: 765px; left: 0px; border-color: rgb(255, 255, 255); border-width: 1px 0px 0px; border-style: solid; background-color: rgb(229, 229, 229);"><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 34px;
+width: 433px;
+color: #57614e;
+top: 17.97991943359375px;
+left: 238.99380493164063px;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font size="5"><b>Why Choose Us?</b></font></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 315px; width: 215px; top: 70px; left: 240px; background-color: transparent;"><div data-silex-type="image" class="editable-style image-element smallPics" style="position: absolute; height: 162px; width: 226px; top: 1px; left: -6px;"><img src="frames-01.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px;
+width: 165px;
+top: 165px;
+left: 8px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>get to know us more</b></div></div><div data-silex-type="html" class="editable-style html-element read" style="position: absolute; height: 30px;
+width: 100px;
+top: 270px;
+left: 95px;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+-moz-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-webkit-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-o-box-shadow: 5px 5px 5px 0px #9b9b9b;
+box-shadow: 5px 5px 5px 0px #9b9b9b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: rgb(103, 103, 103);"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">READ MORE</a></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 49px;
+width: 206px;
+top: 195px;
+left: 4px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2">Just browse through all our Free Website Templates and ﬁnd what you’re looking for.</font></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 315px; width: 215px; top: 70px; left: 486px; background-color: transparent;"><div data-silex-type="image" class="editable-style image-element smallPics" style="position: absolute; height: 162px; width: 226px; top: 1px; left: -6px;"><img src="frames-02.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px;
+width: 155px;
+top: 165px;
+left: 8px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>Our lawyers</b></div></div><div data-silex-type="html" class="editable-style html-element read" style="position: absolute; height: 30px; width: 100px; top: 270px; left: 95px; padding-top: 10px; padding-left: 10px; padding-right: 10px; -webkit-box-shadow: rgb(155, 155, 155) 5px 5px 5px 0px; box-shadow: rgb(155, 155, 155) 5px 5px 5px 0px; border-top-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-bottom-left-radius: 3px; background-color: rgb(103, 103, 103);"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">READ MORE</a></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 49px;
+width: 206px;
+top: 195px;
+left: 4px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2">Our website templates are created with inspiration, checked for quality and originality.</font></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 315px; width: 215px; top: 70px; left: 731px; background-color: transparent;"><div data-silex-type="image" class="editable-style image-element smallPics" style="position: absolute; height: 162px; width: 226px; top: 0.98956298828125px; left: -6.01043701171875px;"><img src="frames-03.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px;
+width: 155px;
+top: 165px;
+left: 8px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>what we offer</b></div></div><div data-silex-type="html" class="editable-style html-element read" style="position: absolute; height: 30px;
+width: 100px;
+top: 270px;
+left: 95px;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+-moz-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-webkit-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-o-box-shadow: 5px 5px 5px 0px #9b9b9b;
+box-shadow: 5px 5px 5px 0px #9b9b9b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: rgb(103, 103, 103);"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">READ MORE</a></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 49px;
+width: 206px;
+top: 195px;
+left: 4px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font size="2">Join the discussion on our forum and meet other people in the&nbsp;</font></div><div><font size="2">community.</font></div></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 315px; width: 215px; top: 70px; left: 975.9739303588867px; background-color: transparent;"><div data-silex-type="image" class="editable-style image-element smallPics" style="position: absolute; height: 162px; width: 228px; top: 1px; left: -5.999999523162842px;"><img src="frames-04.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px;
+width: 165px;
+top: 165px;
+left: 8px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>get in touch with us</b></div></div><div data-silex-type="html" class="editable-style html-element read" style="position: absolute; height: 30px;
+width: 100px;
+top: 270px;
+left: 95px;
+padding-top: 10px;
+padding-left: 10px;
+padding-right: 10px;
+-moz-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-webkit-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-o-box-shadow: 5px 5px 5px 0px #9b9b9b;
+box-shadow: 5px 5px 5px 0px #9b9b9b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: rgb(103, 103, 103);"><div class="silex-element-content" style="width: 100%; height: 100%;"><a href="#">READ MORE</a></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 49px;
+width: 206px;
+top: 195px;
+left: 4px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2">Our website templates are created with inspiration, checked for quality and originality.</font></div></div></div></div><div data-silex-type="container" class="editable-style container-element page-page-1 paged-element" style="position: absolute; height: 210px; width: 1438px; top: 1210px; left: 0px; border-width: 1px 0px 0px; border-style: solid; border-color: rgb(255, 255, 255); background-color: rgb(229, 229, 229);"><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 210px; width: 320px; top: 0px; left: 236px; background-color: transparent;"><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px; width: 118px; top: 30px; left: 20px; color: rgb(98, 98, 98); background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>LATEST NEWS</b></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 101px;
+width: 224px;
+top: 75px;
+left: 35px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2">This website template has been designed by Free Website Templates for you, for free.You can replace all this text with your own text. You can remove any link.</font></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 210px; width: 320px; top: 0px; left: 558px; border-width: 0px 2px; border-style: solid; border-color: rgb(193, 193, 193); background-color: transparent;"><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px; width: 111px; top: 30px; left: 20px; color: rgb(98, 98, 98); background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>CONTACT US</b></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 101px;
+width: 224px;
+top: 75px;
+left: 35px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font size="2">ADDRESS: the address city, state 1111</font></div><div><font size="2">PHONE: (+20) 000 222 999</font></div><div><font size="2">EMAIL: info@freewebsitetemplates.com</font></div></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 210px; width: 320px; top: 0px; left: 880px; background-color: transparent;"><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 29px;
+width: 175px;
+top: 30px;
+left: 20px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><b>SEND US A MESSAGE</b></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 101px;
+width: 285px;
+top: 75px;
+left: 35px;
+color: #626262;
+background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2">If you're having problems editing this website template, then don't hesitate to ask for help on the Forums.</font></div></div><div data-silex-type="html" class="editable-style html-element mail" style="position: absolute; height: 30px;
+width: 212px;
+top: 147px;
+left: 35px;
+padding-top:10px;
+-moz-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-webkit-box-shadow: 5px 5px 5px 0px #9b9b9b;
+-o-box-shadow: 5px 5px 5px 0px #9b9b9b;
+box-shadow: 5px 5px 5px 0px #9b9b9b;
+filter:progid:DXImageTransform.Microsoft.Shadow(color=#9b9b9b, Direction=134, Strength=5);
+-moz-border-radius: 3px;
+-webkit-border-radius: 3px;
+border-radius: 3px;
+background-color: rgb(103, 103, 103);"><div class="silex-element-content" style="width: 100%; height: 100%;"><a class="mail" href="mailto:contact@silexlabs.org">Click to send us an email</a></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 48px; width: 447px; top: 227px; left: -106px; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><span style="font-size: small;"><font color="#ffffff">© COPYRIGHT 2042 the name of your company. ALL RIGHTS RESERVED.</font></span></div></div></div></div><div data-silex-type="container" class="editable-style container-element page-page-1 paged-element" style="position: absolute; height: 403px; width: 1440px; top: 140px; left: 0px; background-color: transparent;"><div data-silex-type="html" class="editable-style html-element" style="position: absolute; height: 399px; width: 960px; top: 0.02928161807358265px; left: 239px; background-color: rgb(255, 255, 255);"><div class="silex-element-content" style="width: 100%; height: 100%;"><ul class="slides">
+    <input type="radio" name="radio-btn" id="img-1" checked="">
+    <li class="slide-container">
+		<div class="slide">
+			<img src="pic-1.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-6" class="prev">‹</label>
+			<label for="img-2" class="next">›</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-2">
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pic-2.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-1" class="prev">‹</label>
+			<label for="img-3" class="next">›</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-3">
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pic-3.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-2" class="prev">‹</label>
+			<label for="img-4" class="next">›</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-4">
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pic-4.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-3" class="prev">‹</label>
+			<label for="img-5" class="next">›</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-5">
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pic-5.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-4" class="prev">‹</label>
+			<label for="img-6" class="next">›</label>
+		</div>
+    </li>
+
+    <input type="radio" name="radio-btn" id="img-6">
+    <li class="slide-container">
+        <div class="slide">
+          <img src="pic-6.jpg">
+        </div>
+		<div class="nav">
+			<label for="img-5" class="prev">‹</label>
+			<label for="img-1" class="next">›</label>
+		</div>
+    </li>
+
+    <li class="nav-dots">
+      <label for="img-1" class="nav-dot" id="img-dot-1"></label>
+      <label for="img-2" class="nav-dot" id="img-dot-2"></label>
+      <label for="img-3" class="nav-dot" id="img-dot-3"></label>
+      <label for="img-4" class="nav-dot" id="img-dot-4"></label>
+      <label for="img-5" class="nav-dot" id="img-dot-5"></label>
+      <label for="img-6" class="nav-dot" id="img-dot-6"></label>
+    </li>
+</ul></div></div></div></div>
+
+
+</body>

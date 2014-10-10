@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Lost In Translation : Le Film</title>
+<meta charset="utf-8" />
+<meta name="description" content="digital design, human stories" />
+<link rel="shortcut icon" href="images/bulle1.png" />
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" media="screen and (max-width: 900px)" href="css/petiteresolution.css"/>
+<link rel="stylesheet" media="screen and (max-width: 1250px)" href="http://www.web-developpeur.com/thomas_monicault/homeworks/lit/css/moyenneresolution.css"/>
+</head>
+<body>
+	<header>
+		<nav>
+			<ul id="menu">
+				<li><a href="index.html#home">home</a></li>
+				<li><a href="index.html#synopsis">synopsis</a></li>
+				<li><a href="index.html#perso">personnages</a></li>
+				<li><a href="index.html#trailer">trailer</a></li>
+			</ul>
+			<a id="menu_btn" class="visible" href=""><img src="images/icomenu.png" alt="" /></a>
+		</nav>
+		<div class="wrapper">
+		<div class="hgroup">
+			<h5 id="home">ancre</h5>
+			<h3>Pathé Distribution</h3>
+		   	<h3>Sofia Coppola</h3>
+		  	<h2>Bill Murray &amp; Scarlett Joanhson</h2>
+		  	<h1>
+				<span>lost</span><br/>
+				in<br/>
+				<span>translation</span>
+			</h1>
+		   	<h4>7 Janvier 2004</h4>
+		</div>
+		   	<a href="index.html#synopsis"><img class="fleche" src="images/fleche1.png" alt="descendre plus bas dans la page"/></a>
+			<div class="bulle1">
+				<a href="http://www.allocine.fr/film/fichefilm-47395/critiques/">les AVIS</a>
+			</div>
+		</div>
+	</header>
+	<section class="synopsis">
+		<div class="wrapper">
+			<h5 id="synopsis">ancre</h5>
+			<h2>synopsis</h2>
+		   	<p>
+		   		Bob Harris, acteur sur le déclin, se rend à Tokyo pour tourner un spot publicitaire.<br/>
+		   		Il a conscience qu'il se trompe - il devrait être chez lui avec sa famille, jouer au théâtre ou encore chercher un rôle dans un film , mais il a besoin d'argent.<br/>
+		   		Du haut de son hôtel de luxe, il contemple la ville, mais ne voit rien.<br/>
+		   		Il est ailleurs, détaché de tout, incapable de s'intégrer à la réalité qui l'entoure, incapable également de dormir à cause du décalage horaire.<br/>
+		   		Dans ce même établissement, Charlotte, une jeune Américaine fraîchement diplômée, accompagne son mari, photographe de mode.<br/>
+		   		Ce dernier semble s'intéresser davantage à son travail qu'à sa femme. Se sentant délaissée, Charlotte cherche un peu d'attention. Elle va en trouver auprès de Bob...
+		   	</p>
+		   	<a href="index.html#perso"><img class="fleche" src="images/fleche1.png" alt="descendre plus bas dans la page"/></a>
+	    </div>
+	</section>
+	<section class="perso">
+		<div class="wrapper">
+			<h5 id="perso">ancre</h5>
+			<h2>Personnages</h2>
+			<div class="bulle3"><a class="bill" href="index.html#"></a></div>
+			<p class="bill_bio">Bob Harris est un acteur de films d’action qui a connu un grand succès quelques années auparavant, mais que tout le monde a un peu oublié. Pour remplir les caisses familiales, il accepte n’importe quel travail et il vient justement à Tokyo pour tourner une publicité pour du whisky. Un boulot qui ne l’enchante guère, mais qui, justement, rapporte bien.<br/>
+			Il faut voir le regard désabusé de Bob, qui accepte de suivre tous ces Japonais qui le considèrent encore comme une star et qui joue le jeu par pur intérêt financier. Il est évident qu’il déteste ce travail, mais son agent lui rappelle fermement qu’il est très bien payé et qu’il a besoin d’accepter de poser avec un verre de whisky à la main, voire de participer à une émission délurée qui ne correspond en rien à son style. Tout l’ennuie pourtant dans cette ville loin de chez lui et comme Bob l’exprime à un moment, il n’a qu’une envie : rentrer.</p>	
+			<div class="bulle2"><a class="scarlet" href="index.html#"></a></div>
+			<p class="scarlet_bio">Charlotte quant à elle suit son mari venu au Japon pour prendre des photos d’un groupe. Ce jeune couple — deux ans de mariage — ne partage déjà plus beaucoup de choses et la jeune femme se sent délaissée par son photographe de mari qui préfère son travail à son épouse.<br/>
+			Charlotte a décidé de suivre son époux, mais elle se demande constamment si elle a fait le bon choix. Passant du temps à regarder dans le vide du haut de sa chambre d’hôtel située dans une haute tour, elle essaie de donner un sens à sa vie. Elle n’est pas encore désabusée comme Bob, elle est encore jeune et elle cherche des réponses, tantôt dans un temple bouddhiste, tantôt avec un CD censé lui ouvrir de nouvelles perspectives dans la vie. On s’en doute, ce n’est pas ça qui va l’aider…</p>
+		</div>
+	</section>	
+	<section>
+		<video id="video_background" preload autoplay loop muted> 
+			<source src="assets/Alone_in_Kyoto___Lost_in_Translation_HD.mp4" type="video/mp4"> Video not supported 
+		</video>
+		<h5 id="trailer">ancre</h5>
+	</section>
+	<section class="avis">
+	<div class="wrapper">
+		<h2>Avis</h2>
+	</div>
+	</section>
+<script type="text/javascript" src="assets/jquery-1.11.0.min.js"></script>
+<script>
+	$(document).ready(function(){
+			$("#menu_btn").mouseenter(function() {
+			$("#menu_btn").toggleClass("visible");
+			$("#menu").toggleClass("invisible");
+			});
+			$(".bill").mouseenter(function() {
+				$(".bill_bio").toggleClass("white");
+			})
+			$(".scarlet").mouseenter(function() {
+				$(".scarlet_bio").toggleClass("white");
+			})
+	});
+</script>
+</body>
+</html>

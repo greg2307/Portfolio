@@ -1,0 +1,214 @@
+<head>
+	<title>Contact</title>
+	<meta charset="UTF-8">
+	<meta name="generator" content="Silex v2.0"> <!-- leave this for stats -->
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery-ui.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/jquery.ui.touch-punch.min.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/pageable.js"></script>
+	<script type="text/javascript" src="http://static.silex.me/2.2/front-end.js"></script>
+	<!-- Normalize -->
+	<link href="http://static.silex.me/2.2/normalize.css" rel="stylesheet">
+	<!-- Silex style -->
+	<link href="http://static.silex.me/2.2/front-end.css" rel="stylesheet">
+
+	<style type="text/css" class="silex-style">
+/*
+	Here are the CSS styles of your website.
+
+	Bellow are some examples, like the styles which you can apply to your text in the text editor.
+
+	See this page for help on CSS
+	https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Getting_started
+
+	In the advanced "Apollo" mode, you will be able to add CSS classes to Silex elements,
+	and then apply a CSS style to it here.
+*/
+
+/* define a style for Title, Headings and Normal texts */
+.title,
+.heading1,
+.heading2,
+.heading3,
+.normal {
+  color: #666666;
+  font-family: verdana, arial;
+	margin: 0;
+}
+
+/* title style */
+.title {
+  font-size: 45px;
+}
+.nav{
+position: absolute;
+height: 25px;
+width: 50px;
+top: 35px;
+left: 740px;
+background-color: transparent;
+}
+.nav:hover{
+    text-decoration : underline;
+}
+#contact h4{
+	padding-top: 50px;
+	text-align: center;
+	font-size: 2em;
+	color: #FFF;
+	padding-bottom: 28px;
+	font-weight: bold;
+}
+
+#contact_form {
+	padding: 10px 10px;
+	overflow: hidden;
+	text-align: center;
+}
+#contact_form legend {
+	font-size: 1.2em;
+	overflow: hidden;
+	color: #6b7778;
+	font-weight: bold;
+}
+#contact_form label span {
+	color: #6b7778;
+}
+#contact_form p {
+	margin: 10px 0;
+	padding: 10px 0;
+	text-align: left;
+	font-weight: bold;
+}
+#contact_form textarea {
+	min-width: 50%;
+	font-weight: bold;
+}
+#contact_form input, textarea {
+	outline: none;
+	padding: 10px 5px;
+	border: solid 1px #454545;
+	border-radius: 3px;
+	width: 100%;
+	font-weight: bold;
+}
+#contact_form p:last-child {
+	margin: 0 0 10px 0;
+}
+button.submit_btn {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background: #ef5050;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+}
+	ul.contact li
+	{
+		position: relative;
+		display: inline-block;
+		margin: 0 0.25em 0 0.25em;
+		top: 0;
+		-moz-transition: top .15s ease-in-out;
+		-webkit-transition: top .15s ease-in-out;
+		-o-transition: top .15s ease-in-out;
+		-ms-transition: top .15s ease-in-out;
+		transition: top .15s ease-in-out;
+	}
+
+	ul.contact li a
+	{
+		display: block;
+		position: relative;
+		width: 48px;
+		height: 48px;
+		border-radius: 6px;
+		outline: 0;
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-o-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+		background: #c1cac5;
+		text-align: center;
+	}
+
+	ul.contact li a:before
+	{
+		color: #f2f5f3;
+		font-size: 32px;
+		line-height: 48px;
+	}
+
+	ul.contact li:hover a.fa-linkedin
+	{ 
+		background-color: #006599; 
+	}
+
+	ul.contact li:hover
+	{
+		top: -5px;
+	}
+
+	ul.contact li:active
+	{
+		top: 0;
+	}
+	button.submit_btn {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 4px;
+	background: #ef5050;
+	color: white;
+	text-transform: uppercase;
+	cursor: pointer;
+	font-weight: bold;
+}
+button.submit_btn:hover {
+	background: #CC3D3D;
+}
+button.submit_btn:active {
+	outline: none;
+	box-shadow: 0 2px 2px rgba(0,0,0,0.5) inset;
+}</style>
+  <script type="text/javascript" class="silex-script"></script>
+<style id="current-page-style">.page-contact{display:inherit; }</style></head>
+<body style="cursor: auto; background-color: rgb(39, 39, 39);" data-silex-type="container" class="ui-dropzone-active silex-runtime">
+	<a id="page-contact" data-silex-type="page" class="page-element">contact</a>
+	<div class="background editable-style container-element" data-silex-type="container" style="top: 6px; left: 83px; width: 960px; height: 588.777777671814px; border-top-left-radius: 0px; border-top-right-radius: 0px; border-bottom-right-radius: 0px; border-bottom-left-radius: 0px; position: absolute; border-width: 1px 0px; border-style: solid; background-color: rgb(39, 39, 39);">
+	<div data-silex-type="container" class="editable-style container-element paged-element page-contact" style="position: absolute; height: 90px; width: 960px; top: 0px; left: 0px; border-width: 0px 0px 2px; border-style: dashed; background-color: rgb(56, 56, 56);"><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px; width: 50px; top: 35px; left: 352px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">HOME</font></div></div><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px; width: 83px; top: 35px; left: 420px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">SERVICES</font></div></div><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px; width: 85px; top: 35px; left: 524px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">PROJETCS</font></div></div><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px; width: 102px; top: 35px; left: 625px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">SOLUTIONS</font></div></div><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px;
+width: 50px;
+top: 35px;
+left: 740px;
+background-color: transparent;
+.nav:hover{
+    color:#8f8989;
+}" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">JOBS</font></div></div><div data-silex-type="text" class="editable-style text-element nav page-link-active" style="position: absolute; height: 25px; width: 50px; top: 35px; left: 805px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">BLOG</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 25px; width: 90px; top: 35px; left: 869px; background-color: transparent;" data-silex-href="#!page-contact"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#ffffff" face="Roboto">CONTACTS</font></div></div><div data-silex-type="image" class="editable-style image-element" style="position: absolute; height: 48px; width: 202.046511627907px; top: 20px; left: 39px;" data-silex-href="http://www.silexlabs.org/"><img src="images/silexlabs-moyen-grand-transparent.png" class="silex-element-content" style="width: 100%; height: 100%;"></div></div><div data-silex-type="container" class="editable-style container-element paged-element page-contact" style="position: absolute; height: 503px; width: 960px; top: 594px; border-width: 0px 0px 1px; border-style: solid; border-color: rgb(222, 222, 222); background-color: rgb(249, 249, 249);"><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 290px; width: 960px; top: 508px; left: 0px; background-color: rgb(34, 34, 34);"><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 55px; width: 213px; top: 15px; left: 0px; border-color: rgb(0, 0, 0); border-width: 0px 0px 2px; border-style: solid; background-color: rgb(34, 34, 34);"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font color="#ffffff"><br></font></div><font color="#ffffff">&nbsp; &nbsp; &nbsp;SERVICES</font></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 55px; width: 213px; top: 15px; left: 245px; border-color: rgb(0, 0, 0); border-width: 0px 0px 2px; border-style: solid; background-color: rgb(34, 34, 34);"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font color="#ffffff"><br></font></div><font color="#ffffff">&nbsp; &nbsp; &nbsp;SOLUTIONS</font></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 55px; width: 213px; top: 15px; left: 491px; border-color: rgb(0, 0, 0); border-width: 0px 0px 2px; border-style: solid; background-color: rgb(34, 34, 34);"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font color="#ffffff"><br></font></div><font color="#ffffff">&nbsp; &nbsp; &nbsp;BLOG</font></div></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 55px; width: 213px; left: 739px; border-color: rgb(0, 0, 0); border-width: 0px 0px 2px; border-style: solid; top: 15px; background-color: rgb(34, 34, 34);"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><font color="#ffffff"><br></font></div><font color="#ffffff">&nbsp; &nbsp; &nbsp;CONTACT</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 30px; top: 104px; background-color: transparent;" data-silex-href="https://github.com/silexlabs/silex-templates"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; GitHub</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 30px; top: 130px; background-color: transparent;" data-silex-href="https://github.com/silexlabs/silex-templates"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; GitHub</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 30px; top: 157px; background-color: transparent;" data-silex-href="https://github.com/silexlabs/silex-templates"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; GitHub</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 30px; top: 182px; background-color: transparent;" data-silex-href="https://github.com/silexlabs/silex-templates"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; GitHub</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 29px; top: 207px; background-color: transparent;" data-silex-href="https://github.com/silexlabs/silex-templates"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; GitHub</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 272px; top: 104px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; Silex Labs</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 272px; top: 130px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; Silex Labs</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 272px; top: 157px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; Silex Labs</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 272px; top: 182px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; Silex Labs</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 272px; top: 207px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; Silex Labs</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 520px; top: 104px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; SILEX</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 520px; top: 130px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; SILEX</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 520px; top: 157px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; SILEX</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 520px; top: 182px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; SILEX</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 23px; width: 72px; left: 520px; top: 207px; background-color: transparent;" data-silex-href="http://www.silexlabs.org/"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font size="2" face="Roboto" color="#38761d">&gt; SILEX</font></div></div><div data-silex-type="text" class="editable-style text-element nav" style="position: absolute; height: 129px; width: 172px; left: 753px; top: 104px; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><u><font color="#38761d"><span style="font-family: arial, sans-serif; font-size: 11px; line-height: 22px;">Email:</span></font></u><div><font color="#38761d" face="arial, sans-serif"><span style="font-size: 11px; line-height: 22px;"><br></span></font><p style="margin: 0px; padding: 0px; outline: 0px; font-size: 11px; font-family: arial, sans-serif; line-height: 22px;" class="normal"><u><font color="#38761d">Phone:&nbsp;</font></u></p><p style="margin: 0px; padding: 0px; outline: 0px; font-size: 11px; font-family: arial, sans-serif; line-height: 22px;" class="normal"><u><font color="#38761d"><br></font></u></p><p style="margin: 0px; padding: 0px; outline: 0px; font-size: 11px; font-family: arial, sans-serif; line-height: 22px;" class="normal"><u><font color="#38761d">Address: &nbsp;</font></u></p></div></div></div><div data-silex-type="container" class="editable-style container-element" style="position: absolute; height: 60px; width: 960px; top: 245px; left: 0px; background-color: rgb(34, 34, 34);"><div data-silex-type="image" class="editable-style image-element" style="position: absolute; height: 32px; width: 32px; top: 15px; left: 22px;" data-silex-href="https://www.facebook.com/silexlabs"><img src="images/facebook_32.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="image" class="editable-style image-element page-link-active" style="position: absolute; height: 32px; width: 32px; top: 15px; left: 69px;" data-silex-href="#!page-contact"><img src="images/flickr_32.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="image" class="editable-style image-element" style="position: absolute; height: 32px; width: 32px; top: 15px; left: 116px;" data-silex-href="https://github.com/silexlabs"><img src="images/github_32.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="image" class="editable-style image-element" style="position: absolute; height: 32px; width: 32px; top: 15px; left: 164px;" data-silex-href="https://twitter.com/silexlabs/"><img src="images/twitter_32.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="image" class="editable-style image-element" style="position: absolute; height: 32px; width: 32px; top: 15px; left: 210px;" data-silex-href="https://www.youtube.com/user/Silexlabs"><img src="images/youtube_32.png" class="silex-element-content" style="width: 100%; height: 100%;"></div><div data-silex-type="text" class="editable-style text-element" style="position: absolute; height: 21px; width: 350px; top: 41px; left: 599px; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><font color="#38761d" size="2">©Silex Labs 2014 - Design by Greg - Company &amp; Co</font></div></div></div></div><div data-silex-type="html" class="editable-style html-element" style="position: absolute; height: 492px; width: 942px; top: 10px; left: 9px; background-color: transparent;"><div class="silex-element-content" style="width: 100%; height: 100%;"><div id="contact">
+				<div id="form">
+					<fieldset id="contact_form">
+						<legend>Remplissez le formulaire ci dessus :</legend>
+							<div id="result"></div>
+						    <p><label for="name"><span>Nom :</span></label>
+						    <br><input type="text" name="name" id="name" placeholder="Entrer votre nom"></p>
+		
+						    <p><label for="email"><span>Email :</span></label>
+						    <br><input type="email" name="email" id="email" placeholder="Entrer votre e-mail"></p>
+						    
+						    <p><label for="phone"><span>Tel. :</span></label>
+						    <br><input type="text" name="phone" id="phone" placeholder="Entrer votre numéro de tel"></p>
+
+						    <p><label for="message"><span>Votre Message :</span></label>
+						    <textarea name="message" id="message" placeholder="Entrer votre message"></textarea>
+						    </p>
+						 
+						    <label><span>&nbsp;</span>
+						    <button class="submit_btn" id="submit_btn">Envoyer</button>
+						    </label>
+					</fieldset> 
+				</div>
+	</div></div></div></div><div data-silex-type="html" class="editable-style html-element paged-element page-contact" style="position: absolute; height: 500px; width: 600px; top: 93px; left: 0px; background-color: rgb(255, 255, 255);"><div class="silex-element-content" style="width: 100%; height: 100%;"><script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:500px;width:600px;"><div id="gmap_canvas" style="height:500px;width:600px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://www.mapembed.com" id="get-map-data">www.mapembed.com</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:10,center:new google.maps.LatLng(48.9274578,2.228076099999953),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(48.9274578, 2.228076099999953)});infowindow = new google.maps.InfoWindow({content:"<b>Silex Labs</b><br/>203 rue Michel Carr&eacute;<br/> bezons" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script></div></div><div data-silex-type="text" class="editable-style text-element paged-element page-contact" style="position: absolute; height: 488px; width: 345px; top: 100px; left: 608px; background-color: transparent;"><div class="silex-element-content normal" style="width: 100%; height: 100%;"><div><br></div><div><br></div>Silex Labs<div><br></div><div>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;</div><div><br></div><div><span>&nbsp; &nbsp; Téléphone:&nbsp;</span><br></div><div><span><br></span></div><div><span><span>&nbsp; &nbsp; Fax:</span><br></span></div><div><span><span><br></span></span></div><div><span><span><span>&nbsp; &nbsp; E-mail:</span><br></span></span></div><div><span><span><span><br></span></span></span></div><div><span><span><span><span>&nbsp; &nbsp; Adresse:</span></span></span></span></div></div></div></div>
+
+
+</body>
